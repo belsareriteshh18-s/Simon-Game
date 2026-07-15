@@ -1,0 +1,203 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#141E30,#243B55);
+}
+
+.container{
+
+    width:430px;
+    text-align:center;
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.4);
+
+}
+
+h1{
+
+    color:#fff;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.subtitle{
+
+    color:#d7d7d7;
+    margin-bottom:25px;
+}
+
+#level-title{
+
+    color:white;
+    margin-bottom:35px;
+    font-size:22px;
+}
+
+.game-board{
+
+    display:grid;
+    grid-template-columns:repeat(2,150px);
+    grid-template-rows:repeat(2,150px);
+    gap:20px;
+
+    justify-content:center;
+}
+
+.btn{
+
+    width:150px;
+    height:150px;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    border:5px solid rgba(255,255,255,.2);
+}
+
+/* Hover Effect */
+
+.btn:hover{
+
+    transform:scale(1.05);
+    /* background-color: #2dc204; */
+    border-color: #5f7398;
+    box-shadow: 0 0 20px #2dc204;
+
+}
+
+.purple{
+
+    background:rgb(133, 14, 237);
+
+    box-shadow:
+    0 0 25px #b582d5;
+}
+
+.red{
+
+    background:red;
+
+    box-shadow:
+    0 0 25px #bd8282;
+}
+
+.yellow{
+
+    background:yellow;
+
+    box-shadow:
+    0 0 25px #e0f75c;
+}
+
+.blue{
+
+    background:blue;
+
+    box-shadow:
+    0 0 25px #5ca7d9;
+}
+
+
+/* Start Button */
+
+.start-btn{
+
+    margin-top:35px;
+
+    padding:14px 40px;
+
+    font-size:18px;
+
+    border:none;
+
+    border-radius:40px;
+
+    color:white;
+
+    background:linear-gradient(45deg,#00c6ff,#0072ff);
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.start-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.start-btn:active{
+
+    transform:scale(.95);
+}
+
+/* Flash Effect */
+.flash {
+     background-color: rgb(214, 214, 214) !important; */
+     box-shadow: 0 0 50px white !important; */
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+/* Responsive */
+
+@media(max-width:500px){
+
+.container{
+
+    width:95%;
+    padding:25px;
+}
+
+.game-board{
+
+    grid-template-columns:repeat(2,120px);
+    grid-template-rows:repeat(2,120px);
+}
+
+.btn{
+
+    width:120px;
+    height:120px;
+}
+
+h1{
+
+    font-size:34px;
+}
+
+#level-title{
+
+    font-size:18px;
+}
+
+}
