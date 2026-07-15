@@ -118,3 +118,21 @@ function updateHighScore(){
         `High Score: ${highScore}`;
     }
 }
+let howBtn = document.querySelector(".how-btn");
+let rules = document.querySelector("#rules");
+
+howBtn.addEventListener("click", function(){
+
+    if(rules.style.display === "block"){
+
+        rules.style.display = "none";
+        howBtn.innerText = "❓ How to Play";
+
+    }else{
+
+        rules.style.display = "block";
+        howBtn.innerText = "❌ Close";
+
+    }
+
+});
