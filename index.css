@@ -278,5 +278,44 @@ h1{
 
     font-size:18px;
 }
+.how-btn{
+        top:5px;
+        right:10px;
+        font-size:px;
+        padding:15px 12px;
+    }
+
+    .rules-box{
+        position: fixed;
+
+        top:50%;
+        left:50%;
+
+        transform:translate(-50%,-50%);
+
+        width:90%;
+        max-width:320px;
+
+        max-height:70vh;
+        overflow-y:auto;
+
+        padding:20px;
+
+        background:rgba(20,20,20,.95);
+
+        border-radius:15px;
+
+        z-index:1000;
+    }
+
+
+    .rules-box h3{
+        font-size:18px;
+    }
+
+    .rules-box p{
+        font-size:13px;
+        line-height:1.5;
+    }
 
 }
