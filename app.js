@@ -56,8 +56,10 @@ function checkANns(idx){
     }
 }
     else{
-        h2.innerText="Game Over! Press start button to Restart";
-         h2.style.color="red";
+        h2.innerHTML=`Game Over!<b> your Score is  ${score} </b> <hr>Press start button to Restart`;
+        
+
+         h2.style.color="black";
         body.style.background = "red";
         
         setTimeout(function (){
@@ -65,6 +67,7 @@ function checkANns(idx){
           body.style.background="linear-gradient(135deg,#141E30,#243B55)";
           resetGame();
         },500);
+         updateHighScore();
 
     
 
@@ -96,4 +99,22 @@ function resetGame() {
 
     h2.innerText = "Click Anywhere to Start";
     h2.style.color = "white";
+}
+
+let highScore = localStorage.getItem("highScore") || 0;
+
+document.getElementById("high-score").innerText =
+`High Score: ${highScore}`;
+
+function updateHighScore(){
+
+    if(score > highScore){
+
+        highScore = score;
+
+        localStorage.setItem("highScore", highScore);
+
+        document.getElementById("high-score").innerText =
+        `High Score: ${highScore}`;
+    }
 }
