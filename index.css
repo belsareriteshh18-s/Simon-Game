@@ -278,5 +278,31 @@ h1{
 
     font-size:18px;
 }
+.how-btn{
+        top:10px;
+        right:10px;
+        padding:6px 12px;
+        font-size:12px;
+    }
+
+    .rules-box{
+        top:50px;
+        right:10px;
+        left:10px;       /* Stretch across the screen */
+        width:auto;      /* Auto width */
+        max-width:none;
+
+        padding:15px;
+        font-size:13px;
+    }
+
+    .rules-box h3{
+        font-size:18px;
+    }
+
+    .rules-box p{
+        font-size:13px;
+        line-height:1.5;
+    }
 
 }
